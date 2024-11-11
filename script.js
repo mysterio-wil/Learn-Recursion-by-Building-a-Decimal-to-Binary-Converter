@@ -14,3 +14,11 @@ const checkUserInput = () => {
 
 // Agrega un listener de evento al botón para ejecutar la función checkUserInput al hacer clic
 convertBtn.addEventListener("click", checkUserInput);
+
+// Agrega un listener de evento al campo de entrada para ejecutar checkUserInput al presionar Enter
+numberInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      checkUserInput();
+    }
+  });
+  
