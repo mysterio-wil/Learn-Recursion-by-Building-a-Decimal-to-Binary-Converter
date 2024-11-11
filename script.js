@@ -11,3 +11,6 @@ const result = document.getElementById("result");
 const checkUserInput = () => {
     console.log(numberInput.value);
   };
+
+// Agrega un listener de evento al botón para ejecutar la función checkUserInput al hacer clic
+convertBtn.addEventListener("click", checkUserInput);
